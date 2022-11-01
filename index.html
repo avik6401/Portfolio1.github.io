@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Avik's Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+	<script src="js/custom.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+
+	<script src="js/typed.min.js"></script>
+</head>
+<body>
+	
+<header>
+	<nav>
+		
+			<div class="logo"><a href="index.html">
+				<img src="images/logo.png">
+			</a></div>
+			<div class="menu">
+				<a href="#home">HOME</a>
+				<a href="#about">ABOUT</a>
+				<a href="#skills">SKILLS</a>
+				<a href="#services">SERVICES</a>
+				<a href="#contact">CONTACT</a>
+				
+			</div>
+
+	</nav>
+	<div class="text">
+		<p>Hello, I am</p>
+		<h1>Avik Das</h1>
+		<p>I am <span id="ani" style="color: #e74c3c;"></span></p>
+		<button class="c-btn">Hire Me</button>
+	</div>
+</header>
+<section id="about">
+	<div class="section-info">
+		<h1>About Me</h1>
+		
+		<p>Front-end Web Developer</p> 
+	</div>
+	<div class="about-row">
+		<div class="abt-left-col">
+			<img src="images/Avik_cv_pic.png">
+		</div>
+		<div class="abt-right-col">
+			<p id="p-title">Hello, I'm Avik Das, I'm   <span id="ani2" style="color: #e74c3c;"></p>
+			<p>I can provide clean code and pixel perfect design. I also make the website more and more interactive with web animations. A responsive design makes your website accessible to all users,regardless of their device.</p>
+			<button class="c-btn">Download Resume</button>
+		</div>
+	</div>
+
+</section>
+<section id="skills">
+	<div class="section-info">
+		<h1 style="color: white ;">Skills</h1>
+		
+		<p>My Skills</p> 
+	</div>
+	<div class="skills-row">
+		<div class="skills-left-col">
+			<p>Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Et laboriosam fuga officia facere accusamus expedita, architecto, eligendi officiis, reprehenderit consequatur corporis perspiciatis. Laborum consectetur quod quibusdam laboriosam soluta, et labore.</p>
+			<button class="c-btn">Read More</button>
+		</div>
+		<div class="skills-right-col">
+			<div class="progress-div">
+				<p>
+					<span>HTML</span><br>
+					<progress value="95" max="100">
+					<span>95%</span>
+				</p>
+				<p>
+					<span>CSS</span><br>
+					<progress value="90" max="100">
+					<span>90%</span>
+				</p>
+				<p>
+					<span>JAVASCRIPT</span><br>
+					<progress value="85" max="100">
+					<span>85%</span>
+				</p>
+				<p>
+
+					<span>BOOSTRAP</span><br>
+					<progress value="92" max="100">
+					<span>90%</span>
+				</p>
+				<p>
+					<span>JQUERY</span><br>
+					<progress value="75" max="100">
+					<span>75%</span>
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="services">
+	<div class="section-info" style="margin-bottom: 35px;">
+		<h1>Services</h1>
+		<p>What We Provide</p> 
+	</div>
+	<div class="services-row">
+		<div class="services-box" data-tilt>
+			<img src="images/b2.png">
+			<h2>Front End Development</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit laborum quasi perspiciatis cupiditate, quaerat corporis.</p>
+		</div>
+		<div class="services-box" data-tilt>
+			<img src="images/b2.png">
+				<h2>UI/UX Design</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit laborum quasi perspiciatis cupiditate, quaerat corporis.</p>
+		</div>
+		<div class="services-box" data-tilt>
+			<img src="images/b2.png">
+				<h2>Web Design</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit laborum quasi perspiciatis cupiditate, quaerat corporis.</p>
+		</div>
+
+	</div>
+</section>
+<section id="contact">
+	<div class="section-info">
+		<h1>Get in Touch</h1>
+		<h4>I am available for freelancing work. Connect with me via phone : +91 8777018645 <br>or email : avikd6401@gmail.com</h4> 
+	</div>
+	<div class="contact-row">
+		<div class="contact-left-col">
+			<img src="images/about4.png" style= "height: 577px" " width: 432px ">
+		</div>
+		<div class="contact-right-col">
+			<form>
+				<h1>Connect With Us</h1>
+				<input type="text" name="" placeholder="Name">
+				<input type="email" name=""placeholder="E-Mail"><br>
+				<textarea cols="40"rows="10" placeholder="Message"></textarea><br>
+				<button class="c-btn">Submit</button>
+			</form>
+		</div>
+	</div>
+</section>
+<footer>
+	<div class="footer">
+		<p>Howrah, Kolkata | Phone : 8777018645 | Email : avikd6401@gmail.com</p><br><br>
+		<p>Copyright &copy  2022 Avik Das</p>
+	</div>
+</footer>
+
+
+<!------------ water-Effect in JQuery ------------->
+
+<script src="js/jquery.ripples-min.js"></script>
+
+<script>
+	jQuery(document).ready(function(){
+		$('header').ripples({
+  dropRadius:20,
+  perturbance:0.03,
+  
+});
+	});
+</script>
+
+
+<!----------------- Text Animation Effect ---------------->
+<script>
+	let animate= new Typed('#ani',{
+		strings:["Front End Developer","UI/UX Designer","Web Designer"],
+		typedSpeed:100,
+		backSpeed:100,
+		loop:true,
+	})
+</script>
+<script>
+	let animat= new Typed('#ani2',{
+		strings:["Front End Developer","UI/UX Designer","Web Designer"],
+		typedSpeed:100,
+		backSpeed:100,
+		loop:true,
+	})
+</script>
+
+<!---------------- Tilt Animation in card ------------------>
+
+<script src="js/tilt.jquery.min.js"></script>
+
+<!---------------- Sticky Navbar  ------------->
+
+<!-- <script> -->
+	<!-- $(window).on("scroll",function(){ -->
+		<!-- if($(window).scrollTop()){ -->
+			<!-- $('nav').addClass('pink'); -->
+		<!-- } -->
+
+		<!-- else{ -->
+			<!-- $('nav').removeClass('pink'); -->
+		<!-- } -->
+	<!-- }) -->
+</script>
+</body>
+</html>
